@@ -97,13 +97,47 @@ nums=[1,2,3,4,5,6,7,8,9,0,"nums"]
 # =================================================================
 # 9. extend()
 # Extends the list by appending elements from another list.
-nums.extend([10, 11])
-print(nums)  # Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, "nums", 10, 11]
+# nums.extend([10, 11])
+# print(nums)  # Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, "nums", 10, 11]
+
 
 
 
 # ==========================================================
 # 10. clear()
 # Removes all elements from the list.
-nums.clear()
-print(nums)  # Output: []
+# nums.clear()
+# print(nums)  # Output: []
+
+
+
+
+# =============================================================
+# The del statement in Python is used to delete objects. 
+# It can be used to delete variables, list elements, or entire lists.
+#  When you use del, you are instructing Python to remove the specified object from memory.
+
+# In the context of lists, del can be used to remove elements at specific positions. 
+# Here's a breakdown of how it works:
+
+# Deleting a single element by index:
+# nums = [1, 2, 3, 4, 5]
+# del nums[2]  # Deletes the element at index 2 (which is 3)
+# print(nums)  # Output: [1, 2, 4, 5]
+
+
+# =========================================
+# Deleting a slice of elements:
+# nums = [1, 2, 3, 4, 5]
+# del nums[1:3]  # Deletes elements from index 1 to 2 (which are 2 and 3)
+# print(nums)  # Output: [1, 4, 5]
+# ==================================================
+# Deleting the entire list:
+# nums = [1, 2, 3, 4, 5]
+# print(nums)
+# del nums  # Deletes the entire list
+# print(nums)  # This would raise a NameError because nums no longer exists  
+nums=[1,2,3,4,5,6,7,8,9,0]
+print(nums)
+print(max(nums))
+print(min(nums))
